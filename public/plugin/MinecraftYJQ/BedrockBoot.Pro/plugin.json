@@ -2,5 +2,6 @@
   "repositoryUrl": "https://github.com/MinecraftYJQ/BedrockBoot.Pro",
   "repositoryOwner": "MinecraftYJQ",
   "repositoryName": "BedrockBoot.Pro",
-  "pluginName": "BedrockBoot.Pro"
+  "pluginName": "BedrockBoot.Pro",
+  "icon": "icon.png"
 }

@@ -2,6 +2,8 @@ export interface PluginInfo {
   repositoryUrl: string;
   repositoryOwner: string;
   repositoryName: string;
+  pluginName: string;
+  icon: string;
 }
 
 type PagesContext = {
@@ -51,5 +53,6 @@ export async function onRequestGet(context: PagesContext): Promise<Response> {
   }
 
   const plugin = (await response.json()) as PluginInfo;
-  return Response.json({ username, pluginName, ...plugin }, { headers: JSON_HEADERS });
+  const iconUrl = `/plugin/${encodeURIComponent(username)}/${encodeURIComponent(pluginName)}/${encodeURIComponent(plugin.icon)}`;
+  return Response.json({ username, ...plugin, pluginName, iconUrl }, { headers: JSON_HEADERS });
 }

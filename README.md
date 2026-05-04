@@ -15,6 +15,25 @@ public/plugin/{用户名}/{插件名}/plugin.json
 - `repositoryUrl`：插件仓库地址
 - `repositoryOwner`：仓库主
 - `repositoryName`：仓库名
+- `pluginName`：插件名
+- `icon`：插件图标文件名，图标文件放在同一个插件目录下
+
+示例：
+
+```text
+public/plugin/MinecraftYJQ/BedrockBoot.Pro/plugin.json
+public/plugin/MinecraftYJQ/BedrockBoot.Pro/icon.png
+```
+
+```json
+{
+	"repositoryUrl": "https://github.com/MinecraftYJQ/BedrockBoot.Pro",
+	"repositoryOwner": "MinecraftYJQ",
+	"repositoryName": "BedrockBoot.Pro",
+	"pluginName": "BedrockBoot.Pro",
+	"icon": "icon.png"
+}
+```
 
 由于 Cloudflare Pages Functions 运行时不能直接枚举静态资源目录，项目会在开发/部署前自动扫描 `public/plugin` 并生成 `public/plugin/index.json`。
 

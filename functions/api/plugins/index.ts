@@ -2,6 +2,8 @@ export interface PluginIndexItem {
   username: string;
   pluginName: string;
   path: string;
+  icon: string;
+  iconUrl: string;
   repositoryUrl: string;
   repositoryOwner: string;
   repositoryName: string;
