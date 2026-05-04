@@ -4,5 +4,8 @@
   "repositoryName": "BedrockBoot.Pro",
   "pluginName": "BedrockBoot Pro",
   "description": "BedrockBoot 增强型插件",
+  "labels": [
+    "增强"
+  ],
   "icon": "icon.png"
 }
